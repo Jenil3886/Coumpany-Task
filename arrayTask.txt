@@ -1,0 +1,47 @@
+
+
+let arr = [1, 3, "Test", 0, "", -1, null, undefined, "Hello World", "hello", "workd", 54, false, true, "-0", "null"];
+
+
+1. Get all the number from array
+2. Get all the string from array
+3. Get all falsy values from array
+4. Get all truty values from array
+5. Get sum of all number in array
+6. Get all values which includes "e"
+7. get all this value and with "d"
+8. Count number of falsy values
+9. Get all NAN values
+
+
+
+
+
+ans.1 ------------------
+[1,3,0,-1,54]
+
+ans.2 ------------------
+ ['Test', '', 'Hello World', 'hello', 'workd', '-0', 'null']
+
+ans.3--------------------
+[0, '', null, undefined, false]
+
+ans.4--------------------
+ [1, 3, 'Test', -1, 'Hello World', 'hello', 'workd', 54, true, '-0', 'null']
+
+
+ans.5---------------------
+57
+
+ans.6---------------------
+ ['Test', 'Hello World', 'hello']
+
+ans.7 ---------------------
+['Hello World', 'workd']
+
+ans.8 ---------------------
+ 5
+
+ans.9----------------------
+
+['Test', undefined, 'Hello World', 'hello', 'workd', 'null']

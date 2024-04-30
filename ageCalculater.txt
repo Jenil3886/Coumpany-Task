@@ -1,0 +1,19 @@
+
+આજ ની તારીખ અને અપડે જે તારીખ આપીએ આ તારીખ વચ્ચે ના year month and day  ગણવા 
+
+
+---------date calculation-----------
+
+ let a = new Date();
+
+ let b = new Date("1990/06/08");
+
+
+exampal 
+
+1.year - 33
+2.month - 5
+3.day - 8
+
+
+

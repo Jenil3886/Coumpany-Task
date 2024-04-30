@@ -1,0 +1,29 @@
+
+
+1. string to array with first letter capital
+   let str = "ipsum dolor sit amet"
+
+   ans.
+        ["Ipsum","Dolor","Sit","Amet"]
+
+2. check string pelidrom or not 
+   let str = 'naman a naman'
+   ans. 
+	It is a palindrome
+
+   let str = 'lorem epsum dolor'
+   ans. 
+	It is not a palindrome
+
+3. worde is asending order with capital
+   let str = "ipsum dolor sit amet"
+
+   ans.
+	"AMET DOLOR IPSUM SIT"
+
+
+4. 'a' carector are repeat and how many time
+   let str= 'motavarachasurat'
+
+   ans.
+	5
