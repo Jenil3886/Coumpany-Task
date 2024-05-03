@@ -1,0 +1,131 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD operator</title>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="input-container">
+            <pre>
+           Name     : <input type="text" id="input-name" placeholder="Enter Name"><br>
+           E-mail   : <input type="email" id="input-email" placeholder="Enter Email"><br>
+           Password : <input type="password" id="input-password" placeholder="Enter Password"><br>
+           Number   : <input type="number" id="input-number" placeholder="Enter Number"><br>
+
+        
+
+
+            <h3>Gender</h3>
+            <input type="radio" id="Male" name="fav_language" value="male">
+            <label for="Male">Male</label>
+
+            <input type="radio" id="Female" name="fav_language" value="Female">
+            <label for="Female">Female</label>
+
+            <input type="radio" id="Other" name="fav_language" value="Other">
+            <label for="Other">Other</label><br>
+
+           <h3>Hobby</h3>
+
+           <input type="checkbox" value="Traveling" id="Traveling">
+            <label>Traveling</label><br>
+
+           <input type="checkbox" value="Lisning Music" id="Lisning-music">
+           <label>Lisning Music</label><br>
+           
+           <input type="checkbox" value="Watching Movie" id="watching-movie">
+            <label>Watching Movie</label><br>
+            
+           <input type="checkbox" value="Playing Cricet" id="Playing-cricet">
+           <label>Playing Cricet</label><br>
+
+            <button onclick="save()">Submit</button>
+
+        </pre>
+        </div>
+
+
+    </div>
+    <script>
+        let inputName = document.getElementById("input-name")
+        let inputEmail = document.getElementById("input-email")
+        let inputPassword = document.getElementById("input-password")
+
+        let Male = document.getElementById("Male")
+        let Female = document.getElementById("Female")
+        let Other = document.getElementById("Other")
+
+        let Traveling = document.getElementById("Traveling")
+        let LisningMusic = document.getElementById("Lisning-music")
+        let watchingMovie = document.getElementById("watching-movie")
+        let PlayingCricet = document.getElementById("Playing-cricet")
+
+
+        const save = () => {
+
+            console.log(inputName.value)
+            console.log(inputEmail.value)
+            console.log(inputPassword.value)
+
+            console.log(Male.value)
+            console.log(Female.value)
+            console.log(Other.value)
+
+            console.log(Traveling.value)
+            console.log(LisningMusic.value)
+            console.log(watchingMovie.value)
+            console.log(PlayingCricet.value)
+
+        }
+
+
+    </script>
+
+</body>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="./script.js"></script> -->
+</head>
+
+<body>
+    <div>
+        <form onsubmit="onSubmit(event)">
+            <input type="checkbox" />
+            <span class="text-white">Filter</span>
+            
+            <input type="checkbox" />
+            <span class="text-white">jenil</span>
+            
+            <input type="checkbox" />
+            <span class="text-white">gajera</span>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const onSubmit = (event) => {
+            event.preventDefault();
+            console.log("on submit called");
+        }
+    </script>
+</body>
+
+</html>
