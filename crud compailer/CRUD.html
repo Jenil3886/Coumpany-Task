@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -17,9 +17,6 @@
            E-mail   : <input type="email" id="input-email" placeholder="Enter Email"><br>
            Password : <input type="password" id="input-password" placeholder="Enter Password"><br>
            Number   : <input type="number" id="input-number" placeholder="Enter Number"><br>
-
-        
-
 
             <h3>Gender</h3>
             <input type="radio" id="Male" name="fav_language" value="male">
@@ -66,66 +63,23 @@
         let watchingMovie = document.getElementById("watching-movie")
         let PlayingCricet = document.getElementById("Playing-cricet")
 
-
         const save = () => {
+            const values = {
+                name: inputName.value,
+                email: inputEmail.value,
+                password: inputPassword.value,
+                gender: Male.checked ? Male.value : Female.checked ? Female.value : Other.checked ? Other.value : null,
+                interests: []
+            }
+            Traveling.checked && values.interests.push(Traveling.value)
+            LisningMusic.checked && values.interests.push(LisningMusic.value)
+            watchingMovie.checked && values.interests.push(watchingMovie.value)
+            PlayingCricet.checked && values.interests.push(PlayingCricet.value)
 
-            console.log(inputName.value)
-            console.log(inputEmail.value)
-            console.log(inputPassword.value)
-
-            console.log(Male.value)
-            console.log(Female.value)
-            console.log(Other.value)
-
-            console.log(Traveling.value)
-            console.log(LisningMusic.value)
-            console.log(watchingMovie.value)
-            console.log(PlayingCricet.value)
-
-        }
-
-
-    </script>
-
-</body>
-
-</html> -->
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <script src="./script.js"></script> -->
-</head>
-
-<body>
-    <div>
-        <form onsubmit="onSubmit(event)">
-            <input type="checkbox" />
-            <span class="text-white">Filter</span>
-            
-            <input type="checkbox" />
-            <span class="text-white">jenil</span>
-            
-            <input type="checkbox" />
-            <span class="text-white">gajera</span>
-            <div>
-                <button type="submit">Submit</button>
-            </div>
-        </form>
-    </div>
-
-    <script>
-        const onSubmit = (event) => {
-            event.preventDefault();
-            console.log("on submit called");
+            localStorage.setItem('values', JSON.stringify(values))
         }
     </script>
+
 </body>
 
 </html>
