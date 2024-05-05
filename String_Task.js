@@ -30,5 +30,31 @@ console.log(isPalindrome(str1));
 console.log(isPalindrome(str2));
 
 
+// 3. worde is asending order with capital
 
+let str = "ipsum dolor sit amet";
+
+let words = str.split(" ");
+
+words.sort();
+
+let capitalizedWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1));
+
+let result = capitalizedWords.join(" ");
+
+console.log(result);
+
+
+// 4. 'a' carector are repeat and how many time
+
+let str = 'motavarachasurat';
+let count = 0;
+
+for (let i = 0; i < str.length; i++) {
+    if (str[i] === 'a') {
+        count++;
+    }
+}
+
+console.log("The character 'a' is repeated", count, "times.");
 
