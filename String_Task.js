@@ -44,8 +44,8 @@ let result = capitalizedWords.join(" ");
 
 console.log(result);
 
-
 // 4. 'a' carector are repeat and how many time
+
 
 let str = 'motavarachasurat';
 let count = 0;
