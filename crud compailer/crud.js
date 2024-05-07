@@ -11,8 +11,7 @@ let Traveling = document.getElementById("Traveling")
 let LisningMusic = document.getElementById("Lisning-music")
 let watchingMovie = document.getElementById("watching-movie")
 let PlayingCricet = document.getElementById("Playing-cricet")
-
-var myArray = []
+let value = []
 
 const dropdown = document.getElementById("city");
 const selectedValue = dropdown.value;
@@ -33,9 +32,10 @@ const save = () => {
     watchingMovie.checked && values.interests.push(watchingMovie.value)
     PlayingCricet.checked && values.interests.push(PlayingCricet.value)
 
-    localStorage.setItem('values', JSON.stringify(values))
-    let value = []
+    // localStorage.setItem('values', JSON.stringify(values))
+
     value.push(values)
+
 
     console.log(value)
 
@@ -43,15 +43,15 @@ const save = () => {
 
     const tableData = document.getElementsByClassName('table-data');
 
-    for (let i = 0; i < tableData.length; i++) {
-        document.getElementById('id').innerText = value[i].id
-        document.getElementById('name').innerText = value[i].name
-        document.getElementById('email').innerText = value[i].email
-        document.getElementById('password').innerText = value[i].password
-        document.getElementById('number').innerText = value[i].Number
-        document.getElementById('gender').innerText = value[i].gender
-        document.getElementById('hobby').innerText = value[i].interests
-    }
+    // for (let i = 0; i < tableData.length; i++) {
+    //     document.getElementById('id').innerText = value[i].id
+    //     document.getElementById('name').innerText = value[i].name
+    //     document.getElementById('email').innerText = value[i].email
+    //     document.getElementById('password').innerText = value[i].password
+    //     document.getElementById('number').innerText = value[i].Number
+    //     document.getElementById('gender').innerText = value[i].gender
+    //     document.getElementById('hobby').innerText = value[i].interests
+    // }
 
     for (let i = 0; i < value.length; i++) {
         const tr = document.createElement('tr');
@@ -63,8 +63,8 @@ const save = () => {
                         <td>${value[i].Number}</td>
                         <td>${value[i].gender}</td>
                         <td>${value[i].interests}</td>
-                        <td><button id="edit">Edit</button></td>
-                        <td><button id="delete">Delete</button></td>
+                        <td><button onclick="edit()" id="edit">Edit</button></td>
+                        <td><button onclick=${deleteRecord(i)} id="delete">Delete</button></td>
                         `;
 
         tr.innerHTML = content;
@@ -72,9 +72,6 @@ const save = () => {
     }
 }
 
-function deleteRecord() {
-    const deleteButton = document.getElementById('delete');
-
-    deleteButton.addEventListener()
+function deleteRecord(i) {
+    console.log(i)
 }
-   
