@@ -11,9 +11,11 @@ let Traveling = document.getElementById("Traveling")
 let LisningMusic = document.getElementById("Lisning-music")
 let watchingMovie = document.getElementById("watching-movie")
 let PlayingCricet = document.getElementById("Playing-cricet")
+
+let dropdown = document.getElementById("city");
 let value = []
 
-const dropdown = document.getElementById("city");
+// const dropdown = document.getElementById("city");
 const selectedValue = dropdown.value;
 console.log(selectedValue);
 
@@ -26,11 +28,14 @@ const save = () => {
         Number: inputNumber.value,
         gender: Male.checked ? Male.value : Female.checked ? Female.value : Other.checked ? Other.value : null,
         interests: [],
+        city:[]
     }
     Traveling.checked && values.interests.push(Traveling.value)
     LisningMusic.checked && values.interests.push(LisningMusic.value)
     watchingMovie.checked && values.interests.push(watchingMovie.value)
     PlayingCricet.checked && values.interests.push(PlayingCricet.value)
+
+    
 
     // localStorage.setItem('values', JSON.stringify(values))
 
