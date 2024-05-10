@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // functin to renderItems
     function renderItems() {
         tableBody.innerHTML = "";
-
+        
         items.forEach((item, index) => {
             const tr = document.createElement("tr");
             const textContent = `
@@ -16,11 +16,12 @@ document.addEventListener("DOMContentLoaded", function () {
             <td>${item.gender}</td>
             <td>${item.hobbies.join(", ")}</td>
             <td>${item.city}</td>
-
+            <td><button onclick= "deleteButton()">Delete</button></td>
+            <td><button onclick= "editButton()">Edit</button></td>
             
             `;
             const deleteButton = document.createElement("button");
-            deleteButton.textContent = "Delete";
+            deleteButton.textContent= "Delete";
             deleteButton.className = "delete-btn";
             deleteButton.addEventListener("click", () => {
                 deleteItem(index);
@@ -58,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to edit item
     function editItem(index) {
         const item = items[index];
-
+        
         const nameInput = document.getElementById("name");
         const emailInput = document.getElementById("email");
         const passwordInput = document.getElementById("password");
@@ -67,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const hobbiesInputs = document.querySelectorAll('input[name="hobby"]');
         const citySelect = document.getElementById("city");
 
-
+        
         nameInput.value = item.name;
         emailInput.value = item.email;
         passwordInput.value = item.password;

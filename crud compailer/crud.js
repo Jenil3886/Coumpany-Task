@@ -28,7 +28,7 @@ const save = () => {
         Number: inputNumber.value,
         gender: Male.checked ? Male.value : Female.checked ? Female.value : Other.checked ? Other.value : null,
         interests: [],
-        city:[]
+        // city:[]
     }
     Traveling.checked && values.interests.push(Traveling.value)
     LisningMusic.checked && values.interests.push(LisningMusic.value)
@@ -40,7 +40,6 @@ const save = () => {
     // localStorage.setItem('values', JSON.stringify(values))
 
     value.push(values)
-
 
     console.log(value)
 
