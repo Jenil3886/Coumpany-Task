@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD operator</title>
+    <link rel="stylesheet" href="./index.css">
+
+    <Script src="./index.js" defer></Script>
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="input-container">
+
+            Name : <input type="text" id="input-name" placeholder="Enter Name">
+            E-mail : <input type="email" id="input-email" placeholder="Enter Email">
+            Password : <input type="password" id="input-password" placeholder="Enter Password">
+            Number : <input type="number" id="input-number" placeholder="Enter Number">
+
+            <div class="col"></div>
+            <h3>Gender</h3>
+            <input type="radio" id="Male" name="fav_language" value="Male">
+            <label for="Male">Male</label>
+
+            <input type="radio" id="Female" name="fav_language" value="Female">
+            <label for="Female">Female</label>
+
+            <input type="radio" id="Other" name="fav_language" value="Other">
+            <label for="Other">Other</label><br>
+
+            <div class="col"></div>
+            <h3>Hobby</h3>
+
+            <input type="checkbox" value="Traveling" id="Traveling">
+            <label>Traveling</label><br>
+
+            <input type="checkbox" value="Lisning Music" id="Lisning-music">
+            <label>Lisning Music</label><br>
+
+            <input type="checkbox" value="Watching Movie" id="Watching-movie">
+            <label>Watching Movie</label><br>
+
+            <input type="checkbox" value="Playing Cricet" id="Playing-cricet">
+            <label>Playing Cricet</label><br>
+
+            <select name="city" id="city">
+                <option value="surat">Surat</option>
+                <option value="mumbay">Mumbay</option>
+                <option value="amadabad">amadabad</option>
+                <option value="vadodra">vadodra</option>
+                <option value="gandhi">gandhi nager</option>
+                <option value="rajkot">rajkot</option>
+                <option value="amareli">amareli</option>
+                <option value="bhavnagar">bhavnagar</option>
+            </select>
+            <button onclick="submit()">Submit</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>E-mail</th>
+                    <th>Password</th>
+                    <th>Number</th>
+                    <th>Gender</th>
+                    <th>Hobby</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+        <div id="update-container">
+            <button id="update-btn">Update</button>
+            <button id="cancel-btn">Cancel</button>
+        </div>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
