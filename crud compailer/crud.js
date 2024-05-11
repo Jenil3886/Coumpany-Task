@@ -44,6 +44,7 @@ const save = () => {
     console.log(value)
 
     const tableBody = document.getElementById('table-body');
+    tableBody.innerHTML=''
 
     for (let i = 0; i < value.length; i++) {
         const tr = document.createElement('tr');
