@@ -3,6 +3,9 @@
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
+    border: 0.8px solid gainsboro;
+    border-radius: 2px;
+    padding: 10px;
   }
   
   h1 {
@@ -51,7 +54,7 @@
     margin-top: 20px;
   }
   
-  #update-btn {
+  .update-btn {
     background-color: #2196F3;
   }
   
