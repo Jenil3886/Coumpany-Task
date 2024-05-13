@@ -7,10 +7,10 @@ let Male = document.getElementById("Male")
 let Female = document.getElementById("Female")
 let Other = document.getElementById("Other")
 
-let Traveling = document.getElementById("Traveling")
-let LisningMusic = document.getElementById("Lisning-music")
+let Travelling = document.getElementById("Travelling")
+let LisningMusic = document.getElementById("Listening-music")
 let watchingMovie = document.getElementById("watching-movie")
-let PlayingCricet = document.getElementById("Playing-cricet")
+let PlayingCricet = document.getElementById("Playing-cricket")
 
 let dropdown = document.getElementById("city");
 let value = []
@@ -30,7 +30,7 @@ const save = () => {
         interests: [],
         // city:[]
     }
-    Traveling.checked && values.interests.push(Traveling.value)
+    Travelling.checked && values.interests.push(Travelling.value)
     LisningMusic.checked && values.interests.push(LisningMusic.value)
     watchingMovie.checked && values.interests.push(watchingMovie.value)
     PlayingCricet.checked && values.interests.push(PlayingCricet.value)

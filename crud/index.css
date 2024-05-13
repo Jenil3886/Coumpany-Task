@@ -12,28 +12,7 @@
   #input-container {
     margin-bottom: 20px;
   }
-  
-  /* #name-input,
-  #email-input,
-  #update-name-input,
-  #update-email-input {
-    padding: 10px;
-    font-size: 16px;
-    margin-right: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  } */
-/*   
-  #name-input:focus,
-  #email-input:focus,
-  #update-name-input:focus,
-  #update-email-input:focus {
-    border-color: #66afe9;
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
-  }
-   */
+ 
   button {
     padding: 10px 20px;
     font-size: 16px;
@@ -62,6 +41,7 @@
   }
   
   th {
+    text-align: center;
     background-color: #4CAF50;
     color: white;
   }
