@@ -14,14 +14,14 @@
 <div class="table">    <!-- Use Table to Create Calculator Structure Design -->
     <table id="calcu">
         <tr>
-            <td colspan="4"><input type="text" id="result" onclick="updateValue(input)">0</td>
+            <td colspan="4" id="display"><input type="text" id="result" value="0"></td>
         </tr>
 
         <tr>
-            <td><input type="button" id="action-button" value="%"></td>
+            <td><input type="button" id="action-button" value="%" onclick="dis('%')" onkeydown="myFunction(event)"></td>
             <td><input type="button" id="action-button" value="C" onclick="clr()"></td>
             <td><input type="button" id="action-button" value="CE" onclick="clr()"></td>
-            <td><input type="button" id="action-button" value="DEL" onclick="clr()"></td>
+            <td><input type="button" id="action-button" value="DEL" onclick="del()"></td>
         </tr>
 
         <tr>
@@ -29,7 +29,7 @@
             <td><input type="button" id="action-button" value="x²" onclick="clr()"></td>
             <td><input type="button" id="action-button" value="x^y" onclick="clr()"></td>
             <td><input type="button" id="action-button" value="/" onclick="dis('/')" onkeydown="myFunction(event)"> </td>
-        </tr>
+        </tr> 
         <tr>
             <td><input type="button" value="1" onclick="dis('1')" onkeydown="myFunction(event)"> </td>
             <td><input type="button" value="2" onclick="dis('2')" onkeydown="myFunction(event)"> </td>
