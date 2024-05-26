@@ -63,7 +63,7 @@ function submit() {
     child && container.removeChild(child)
 }
 
-function renderData() {
+function renderData() {  
     const tableBody = document.getElementById('table-body');
 
     tableBody.innerHTML = '';
