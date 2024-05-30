@@ -601,3 +601,7 @@ console.log("Numbers value from the Object - Value:", numberValues);
 // Get all falsy values from Object - Value
 const falsyValues = Object.values(obj).filter(value => !value);
 console.log("Falsy values from Object - Value:", falsyValues);
+
+// Get all string value from Object - Value
+const stringValues = Object.values(obj).filter(value => typeof value === 'string');
+console.log("String value from Object - Value:", stringValues);
