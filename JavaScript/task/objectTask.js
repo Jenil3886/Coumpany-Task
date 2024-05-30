@@ -609,3 +609,9 @@ console.log("String value from Object - Value:", stringValues);
 // Get all values which has space in it - Value
 const spaceValues = Object.values(obj).filter(value => typeof value === 'string' && value.includes(' '));
 console.log("Values which has space in it - Value:", spaceValues);
+
+// Get all LOW values from Object - Value
+const lowValues = Object.entries(obj)
+  .filter(([key, value]) => key.startsWith('Weight_') && value === 'LOW')
+  .map(([key, value]) => key.split('_')[1]);
+console.log("LOW values from Object - Value:", lowValues);
