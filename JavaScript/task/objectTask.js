@@ -605,3 +605,7 @@ console.log("Falsy values from Object - Value:", falsyValues);
 // Get all string value from Object - Value
 const stringValues = Object.values(obj).filter(value => typeof value === 'string');
 console.log("String value from Object - Value:", stringValues);
+
+// Get all values which has space in it - Value
+const spaceValues = Object.values(obj).filter(value => typeof value === 'string' && value.includes(' '));
+console.log("Values which has space in it - Value:", spaceValues);
