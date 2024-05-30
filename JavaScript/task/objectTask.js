@@ -598,3 +598,6 @@ console.log("Keys starting from 1 - key:", keysStartingFrom1);
 const numberValues = Object.values(obj).filter(value => typeof value === 'number');
 console.log("Numbers value from the Object - Value:", numberValues);
 
+// Get all falsy values from Object - Value
+const falsyValues = Object.values(obj).filter(value => !value);
+console.log("Falsy values from Object - Value:", falsyValues);
