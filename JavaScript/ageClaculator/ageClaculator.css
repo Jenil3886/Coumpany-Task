@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2782e3;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: #eee;
+    min-height: 100px;
+    width: 520px auto;
+    margin: 100px auto;
+    border-radius: 5px;
+    height: auto;
+}
