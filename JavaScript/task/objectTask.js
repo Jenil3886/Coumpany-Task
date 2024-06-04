@@ -592,23 +592,23 @@ let obj = {
 
 // Get all the Keys starting from 1 - key
 const keysStartingFrom1 = Object.keys(obj).filter(key => key.startsWith('1_'));
-console.log("Keys starting from 1 - key:", keysStartingFrom1);
+// console.log("Keys starting from 1 - key:", keysStartingFrom1);
 
 // Get all numbers value from the Object - Value
 const numberValues = Object.values(obj).filter(value => typeof value === 'number');
-console.log("Numbers value from the Object - Value:", numberValues);
+// console.log("Numbers value from the Object - Value:", numberValues);
 
 // Get all falsy values from Object - Value
 const falsyValues = Object.values(obj).filter(value => !value);
-console.log("Falsy values from Object - Value:", falsyValues);
+// console.log("Falsy values from Object - Value:", falsyValues);
 
 // Get all string value from Object - Value
 const stringValues = Object.values(obj).filter(value => typeof value === 'string');
-console.log("String value from Object - Value:", stringValues);
+// console.log("String value from Object - Value:", stringValues);
 
 // Get all values which has space in it - Value
 const spaceValues = Object.values(obj).filter(value => typeof value === 'string' && value.includes(' '));
-console.log("Values which has space in it - Value:", spaceValues);
+// console.log("Values which has space in it - Value:", spaceValues);
 
 // Get all LOW values from Object - Value
 const lowValues = Object.entries(obj)
