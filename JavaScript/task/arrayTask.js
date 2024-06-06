@@ -20,6 +20,6 @@ console.log(falsy)
 
 // 4. Get all truty values from array
 
-let truty = arr.filter(element => typeof element === 'truty')
+let truty = arr.filter(Boolean)
 
 console.log(truty)
