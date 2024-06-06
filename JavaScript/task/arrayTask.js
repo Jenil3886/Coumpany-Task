@@ -11,3 +11,15 @@ console.log(number)
 let string = arr.filter(element => typeof element === 'string')
 
 console.log(string)
+
+// 3. Get all falsy values from array
+
+let falsy = arr.filter(value => !value)
+
+console.log(falsy)
+
+// 4. Get all truty values from array
+
+let truty = arr.filter(element => typeof element === 'truty')
+
+console.log(truty)
