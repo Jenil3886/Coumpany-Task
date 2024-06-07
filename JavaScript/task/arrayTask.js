@@ -47,3 +47,8 @@ let valueWithD = arr.filter(item =>{
 })  
 
 console.log(valueWithD)
+
+// 8. Count number of falsy values
+
+let falsyCount = arr.filter(value => !value).length
+console.log(falsyCount)
