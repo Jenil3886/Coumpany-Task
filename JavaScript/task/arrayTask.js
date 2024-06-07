@@ -23,3 +23,11 @@ console.log(falsy)
 let truty = arr.filter(Boolean)
 
 console.log(truty)
+
+// 5. Get sum of all number in array
+
+let sum = arr
+  .filter(element => typeof element === 'number')  // Step 1: Filter out only numbers
+  .reduce((acc, curr) => acc + curr, 0);           // Step 2: Sum the numbers
+
+console.log(sum);  // Output: 57
