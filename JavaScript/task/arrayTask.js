@@ -39,3 +39,11 @@ let valueWithE = arr.filter(item =>{
 })  
 
 console.log(valueWithE)
+
+// 7. get all this value and with "d"
+
+let valueWithD = arr.filter(item =>{
+  return typeof item === "string" && item.includes("d")
+})  
+
+console.log(valueWithD)
