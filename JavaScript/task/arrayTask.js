@@ -30,4 +30,12 @@ let sum = arr
   .filter(element => typeof element === 'number')  // Step 1: Filter out only numbers
   .reduce((acc, curr) => acc + curr, 0);           // Step 2: Sum the numbers
 
-console.log(sum);  // Output: 57
+console.log(sum);  
+
+// 6. Get all values which includes "e"
+
+let valueWithE = arr.filter(item =>{
+  return typeof item === "string" && item.includes("e")
+})  
+
+console.log(valueWithE)

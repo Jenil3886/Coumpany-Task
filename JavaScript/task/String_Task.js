@@ -71,4 +71,4 @@ for (let i = 0; i < stri.length; i++) {
     }
     console.log
  }
- console.log("The character 'a' is repeated", count, "times.");
+ console.log("The character 'a' is repeated", count, "times."); 
