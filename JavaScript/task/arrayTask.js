@@ -54,8 +54,7 @@ let falsyCount = arr.filter(value => !value).length
 console.log(falsyCount)
 
 // 9. Get all NAN values
-// let arr = [1, 3, "Test", 0, "", -1, null, undefined, "Hello World", "hello", "workd", 54, false, true, "-0", "null"];
 
-let nanValues = arrWithNaN.filter(value => Number.isNaN(value));
+let nanValues = arr.filter(value => Number.isNaN(value));
 
 console.log(nanValues); // Output will be []

@@ -25,7 +25,7 @@ function submit() {
         gender: male.checked ? male.value : female.checked ? female.value : other.checked ? other.value : null,
         interest: [],
         city: city.value,
-    }
+    } 
 
     traveling.checked && values.interest.push(traveling.value);
     lisningMusic.checked && values.interest.push(lisningMusic.value);

@@ -3,11 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="./app.js" defer></script>
+    <title>CRUD OPERATOR</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="./js/app.js" defer></script>
 </head>
 <body>
-    
+        <div class="header">
+            <h1>Employe</h1>
+        </div>
+        <div class="upper-btn-box">
+            <div class="left-box">
+                <button id="add-btn"><i class="fa fa-plus"></i>&nbsp;Add Employe</button>
+                <button style="background-color: #33b5e6;"><i class="fa fa-eraser"></i>&nbsp;Clear Filter</button> 
+            </div>
+            <div class="right-box">
+                <i class="fa fa-search"></i>
+                <input type="text" id="empId" placeholder="Enter Employe Id">
+                <button style="background-color: #ee534f;">Search</button>
+            </div>
+        </div>
+        <div class="table-box">
+            <table>
+                <tr>
+                    <th>Sr No</th>
+                    <th>Profile</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Last Name</th>
+                    <th>E-mail</th>
+                    <th>Office Code</th>
+                    <th>Job Title</th>
+                    <th colspan="2">Action</th>
+                </tr>
+                <tr>
+                    <td>Hello Word</td>
+                    <td>Hello Word</td>
+                    <td>Hello Word</td>
+                    <td>Hello Word</td>
+                    <td>Hello Word</td>
+                    <td>Hello Word</td>
+                    <td>Hello Word</td>
+                    <td>Hello Word</td>
+                    <td>    <button><i class="fa fa-eye"></i></button>
+                     <td>   <button style="background-color: #ee534f;"><i class="fa fa-trash"></i></button>
+                    </td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="model">
+            <i class="fa fa-times-circle close-icon"></i>
+            <div class="left-model">
+                <div class="img-box">
+                    <img src="./img/WhatsApp Image 2024-06-12 at 14.47.46_8bd04fdd.jpg" width="150" height="150" alt="">
+                    <i class="fa fa-plus"></i>
+                    <input type="file">
+                </div>
+            </div>
+            <div class="right-model">
+                <div class="input-box"> 
+                    <label id="id">Id</label>
+                    <input type="text" id="id">
+                </div>
+                <div class="input-box">
+                    <label id="name">Name</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="input-box">
+                    <label id="l-name">Last Name</label>
+                    <input type="text" id="l-name">
+                </div>
+                <div class="input-box">
+                    <label id="email">E-mail</label>
+                    <input type="text" id="email">
+                </div>
+                <div class="input-box">
+                    <label id="office-code">Office Code</label>
+                    <input type="text" id="office-code">
+                </div>
+                <div class="input-box">
+                    <label id="job-title">Job Title</label>
+                    <input type="text" id="job-title">
+                </div>
+                <div class="input-box">
+                    <button id="register-btn">Register</button>
+                    <button disabled style="background-color: #ee534f;">Update</button>
+                </div>
+            </div>
+        </div>
+
+
 </body>
 </html>
