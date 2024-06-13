@@ -58,5 +58,6 @@ console.log(value.id)
     const child = document.querySelector('.update-btn')
 
     child && container.removeChild(child)
+    
 
 }
