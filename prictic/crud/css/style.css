@@ -1,4 +1,4 @@
-* {
+css* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,6 +8,7 @@
     width: 100%;
     padding: 10px 30px;
     background: #ee534f;
+    text-align: center;
     color: white;
 }
 
@@ -26,7 +27,7 @@
 }
 
 .upper-btn-box .left-box {
-    width: 50%;
+    width: 40%;
     height: 100%;
 }
 
@@ -53,7 +54,7 @@
     padding: 10px;
 }
 
-.upper-btn-box .right-box input {
+.upper-btn-box .right-box input{
     padding: 13px;
     width: 80%;
     outline: none;
@@ -63,6 +64,10 @@
     font-family: Verdana;
     letter-spacing: 1px;
     font-weight: bold;
+}
+
+.upper-btn-box .right-box button{
+    width: 20%;
 }
 
 /* start table coding */
@@ -128,7 +133,7 @@
 .model.active{
     opacity: 1;
     z-index: 1;
-    width: 60%;
+    width: 50%;
 }
 .model .close-icon{
     position: absolute;
